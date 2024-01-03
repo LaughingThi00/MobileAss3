@@ -4,7 +4,6 @@ const cors = require("cors");
 
 const authRouter = require("./routes/auth");
 const userRouter = require("./routes/user");
-const rsaRouter= require("./routes/rsa")
 // const path = require('path')
 
 require("dotenv").config();
@@ -36,7 +35,6 @@ app.use(cors());
 
 app.use("/api/auth", authRouter);
 app.use("/api/user", userRouter);
-app.use("/api/rsa", rsaRouter);
 
 const PORT = process.env.PORT || 6969;
 
